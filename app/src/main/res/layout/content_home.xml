@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_home"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="32dp"
+        android:text="Photo Picker"
+        android:textColor="#f98339"
+        android:textSize="32sp"
+        android:fontFamily="@font/archivo_semibold"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/photo_container"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="32dp"
+        android:adjustViewBounds="true"
+        tools:src="@android:drawable/sym_def_app_icon"
+        />
+    <Button
+        android:id="@+id/btn_open_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="32dp"
+        android:text="Click to select pic"
+        tools:ignore="HardcodedText" />
+</LinearLayout>
